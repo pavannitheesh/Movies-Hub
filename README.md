@@ -1,70 +1,88 @@
-# Getting Started with Create React App
+# Movie Hub
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Overview
+Movie Hub is a React application that allows users to explore trending movies and TV series, search for specific titles, and filter results by genre. The application utilizes the TMDB (The Movie Database) API to fetch data and display it in a user-friendly interface.
 
-## Available Scripts
+## Features
+- **Trending Movies and TV Series**: View the latest trending content.
+- **Search Functionality**: Search for movies and TV series by title.
+- **Genre Filtering**: Filter movies by genre for a more tailored experience.
+- **Responsive Design**: The application is designed to be responsive and works well on various screen sizes.
 
-In the project directory, you can run:
+## Technologies Used
+- **React**: A JavaScript library for building user interfaces.
+- **Material-UI**: A popular React UI framework for building responsive and accessible applications.
+- **Axios**: A promise-based HTTP client for making API requests.
+- **Tailwind CSS**: A utility-first CSS framework for styling.
+- **React Router**: For handling routing within the application.
 
-### `npm start`
+## Getting Started
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### Prerequisites
+- Node.js (v14 or later)
+- npm (Node Package Manager)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### Installation
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/yourusername/movie-hub.git
+   cd movie-hub
+   ```
 
-### `npm test`
+2. Install the dependencies:
+   ```bash
+   npm install
+   ```
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+3. Create a `.env` file in the root directory and add your TMDB API key:
+   ```plaintext
+   REACT_APP_MOVIE_APIKEY=your_api_key_here
+   ```
 
-### `npm run build`
+### Running the Application
+To start the development server, run:
+```bash
+npm start
+```
+Open your browser and navigate to [http://localhost:3000](http://localhost:3000) to view the application.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Running Tests
+To run the tests, use:
+```bash
+npm test
+```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Building for Production
+To create a production build, run:
+```bash
+npm run build
+```
+The build will be optimized and placed in the `build` folder.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Folder Structure
+```
+movie-hub/
+├── public/
+│   ├── index.html
+│   ├── manifest.json
+│   └── robots.txt
+├── src/
+│   ├── components/          # Reusable components
+│   ├── pages/               # Pages and routes
+│   ├── hooks/               # Custom hooks
+│   ├── App.js               # Main application component
+│   ├── index.js             # Entry point
+│   └── index.css            # Global styles
+├── package.json
+└── README.md
+```
 
-### `npm run eject`
+## Contributing
+Contributions are welcome! Please feel free to submit a pull request or open an issue for any suggestions or improvements.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## License
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Acknowledgments
+- **TMDB API** for providing the movie and TV series data.
+- **Create React App** for bootstrapping the project.

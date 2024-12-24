@@ -1,24 +1,47 @@
-import logo from './logo.svg';
-import './App.css';
+
+import LabelBottomNavigation from "./components/Bottom";
+import Navbar from "./components/Navbar";
+import { Route, Routes, BrowserRouter as Router, Link } from 'react-router-dom'
+import Trending from "./path/Trending";
+import Movies from "./path/Movies";
+import Tvseries from "./path/Tvseries";
+import Search from "./path/Search";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <>
+    <Router  >
+    <Navbar/>
+   
+      <Routes>
+        <Route path="/" element={<Trending/>}/>
+        <Route path="/movies" element={<Movies/>}/>
+        <Route path="/tvseries" element={<Tvseries/>}/>
+        <Route path="/search" element={<Search/>}/>
+      </Routes>
+    
+    
+    
+
+
+
+   
+
+
+
+
+    <div >
+    <LabelBottomNavigation/>
+
     </div>
+   
+  
+    
+    
+    
+    </Router>
+    
+    </>
   );
 }
 
