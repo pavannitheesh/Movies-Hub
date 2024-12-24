@@ -25,7 +25,7 @@ Movie Hub is a React application that allows users to explore trending movies an
 ### Installation
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/movie-hub.git
+   git clone https://github.com/pavannitheesh/Movies-Hub.git
    cd movie-hub
    ```
 
@@ -80,9 +80,6 @@ movie-hub/
 ## Contributing
 Contributions are welcome! Please feel free to submit a pull request or open an issue for any suggestions or improvements.
 
-## License
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ## Acknowledgments
 - **TMDB API** for providing the movie and TV series data.
-- **Create React App** for bootstrapping the project.
